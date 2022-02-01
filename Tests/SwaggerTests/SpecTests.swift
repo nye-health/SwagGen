@@ -9,7 +9,7 @@ class SpecTests: XCTestCase {
     func testSpecs() {
 
         describe("petstore spec") {
-            let path = Path(#file) + "../../../Specs/petstore/spec.yml"
+            let path = Path(#file) + "../../../Specs/Petstore/spec.yml"
 
             $0.it("can load") {
                 _ = try SwaggerSpec(path: Path(path.string))
