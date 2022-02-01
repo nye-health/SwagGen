@@ -42,7 +42,7 @@ class GenerateCommand: Command {
     func execute() throws {
         let clean = self.clean.value ?? .none
         let destinationPath = destination.value.flatMap { Path($0) } ?? (Path.current + "generated")
-        let language = self.language.value ?? "swift"
+        let language = self.language.value ?? "Swift"
 
         let specURL: URL
         if URL(string: spec.value)?.scheme == nil {
